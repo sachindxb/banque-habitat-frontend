@@ -41,6 +41,42 @@
   align-items: center;
   gap: 0.25rem;
   cursor: pointer;
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  z-index: 1000;
+  display: none;
+}
+
+.services-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
 }
 
 .dropdown-icon {
@@ -75,10 +111,15 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   cursor: pointer;
+  position: relative;
 }
 
-.language-divider {
-  color: #ccc;
+.language-selector:hover .dropdown-menu {
+  display: block;
+}
+
+.language-emoji {
+  font-size: 1.25rem;
 }
 
 .signup-button {
