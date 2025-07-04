@@ -7,10 +7,6 @@ import SocialBanner from "../components/home/SocialBanner/page";
 export default function Home() {
     return (
         <div>
-          
-          Page starts here
-
-            
             <Hero />
             <ServicesGrid />
             <FeaturedNews />
